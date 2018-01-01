@@ -1,0 +1,23 @@
+{
+	"name": "YouTube Audio Downloader",
+	"version": "0.1",
+	"manifest_version": 2,
+	"description": "Extracts audio and download as mp3 file",
+	"browser_action": {
+		"default_icon": "icon.png",
+		"default_title": "YouTube Audio Downloader",
+		"default_popup": "extension.html"
+	},
+	"content_security_policy": "script-src 'self' https://www.google.com; object-src 'self'",
+	"icons": {
+		"128": "icon.png"
+	},
+    "background": {
+        "scripts": [
+            "js/background.js"
+        ]
+    },
+  	"permissions": [
+    	"tabs", "*://*/*", "downloads"
+  	]
+}
