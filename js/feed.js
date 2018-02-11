@@ -41,7 +41,7 @@ function updateQueue(oldQueue) {
 		var starti = currentURL.indexOf("v=") + 2;
 		var endi = currentURL.indexOf("&", starti);
 		if(endi == -1) endi = currentURL.length;
-        newVid = "<li>" + currentURLThumb + "<a href=" + 
+        newVid = "<li class=\"spinner\">" + currentURLThumb + "<a href=" + 
             "http://18.217.196.117/getAudio/" + currentURL.substring(starti, endi) + ">" + currentURLTitle + "</a></li>";
     }
     // Initialize with current video if queue is empty
